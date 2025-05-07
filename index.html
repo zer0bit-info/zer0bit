@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zer0Bit Informática - Soluções inovadoras e acessíveis para o seu mundo digital">
+    <meta name="keywords" content="Zer0Bit Informática, manutenção de computadores, peças de informática, suporte técnico, software, instalação de software">
+    <meta name="author" content="Zer0Bit Informática">
+    <meta property="og:title" content="Zer0Bit Informática">
+    <meta property="og:description" content="Soluções inovadoras e acessíveis para o seu mundo digital. Manutenção de computadores, vendas de peças e muito mais.">
+    <meta property="og:image" content="caminho/para/imagem-de-preview.jpg">
+    <title>Zer0Bit Informática</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ícone de Favicon -->
+    <link rel="icon" href="caminho/para/favicon.ico">
+</head>
+<body>
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <div class="logo">
+            <h1>Zer0Bit Informática</h1>
+            <p>Transformando seu mundo digital com soluções inovadoras e acessíveis.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#pecas">Peças em Estoque</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página de Serviços -->
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li><strong>Manutenção de Computadores/Notebooks:</strong> Reparos e otimizações de hardware e software, garantindo o melhor desempenho.</li>
+            <li><strong>Instalação/Construção de Softwares:</strong> Desenvolvimento e personalização de softwares para empresas e usuários finais.</li>
+            <li><strong>Formatação:</strong> Serviços de formatação de sistemas operacionais e reinstalação de drivers essenciais.</li>
+            <li><strong>Chave Windows:</strong> Venda de chaves de ativação genuínas para o sistema Windows.</li>
+            <li><strong>Suporte para Mac e Linux:</strong> Suporte especializado para sistemas Mac e Linux, com manutenção e ajustes personalizados.</li>
+        </ul>
+    </section>
+
+    <!-- Página de Peças em Estoque -->
+    <section id="pecas">
+        <h2>Peças Usadas de Computadores à Venda</h2>
+        <p>Temos um estoque variado de peças usadas em ótimo estado, com preços acessíveis para você manter seu equipamento funcionando de maneira eficiente. Entre em contato para mais detalhes e aproveite nossos preços imbatíveis!</p>
+        <ul>
+            <li>HD Enterprise-class WD de 250GB – R$100</li>
+            <li>HD Seagate de 160 GB – R$80</li>
+            <li>HD Samsung 60GB – R$60</li>
+            <li>HD WD BLUE de 500GB – R$120</li>
+            <li>HD WD Caviar Black de 250GB – R$150</li>
+            <li>HD Seagate de 500GB – R$140</li>
+            <li>Processador Intel Pentium Dual Core E2160 – R$120</li>
+            <li>Processador AMD A4 4000 – R$110</li>
+            <li>Placa-mãe ASRock FM2A55-M0HD+ – R$150</li>
+            <li>Placa-mãe GIGABYTE FSB1066 GA-945GCMX-S2 – R$140</li>
+            <li>4 Pentes de Memória RAM Kingston de 2GB – R$80 cada</li>
+            <li>1 Pente de Memória RAM Kingston de 1GB – R$40</li>
+            <li>1 Pente de Memória RAM Markvision de 1GB – R$35</li>
+            <li>1 Pente de Memória RAM Teikon de 4GB – R$90</li>
+        </ul>
+        <p>Todas as peças são usadas. Para mais informações, entre em contato diretamente!</p>
+    </section>
+
+    <!-- Página de Contato -->
+    <section id="contato">
+        <h2>Entre em Contato Conosco</h2>
+        <form id="form-contato" action="mailto:leonardosdsilva18@gmail.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="contato-info">
+            <p>WhatsApp: <a href="https://wa.me/54999400722">54999400722</a></p>
+            <p>E-mail: <a href="mailto:leonardosdsilva18@gmail.com">leonardosdsilva18@gmail.com</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/zer0bit.informatica/">Zer0Bit Informática</a></p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Zer0Bit Informática. Todos os direitos reservados.</p>
+    </footer>
+    
+    <!-- Scripts -->
+    <script>
+        // Validação simples do formulário de contato
+        document.getElementById("form-contato").addEventListener("submit", function(event) {
+            if (!document.getElementById("nome").value || !document.getElementById("email").value || !document.getElementById("telefone").value || !document.getElementById("mensagem").value) {
+                alert("Por favor, preencha todos os campos.");
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
